@@ -47,12 +47,12 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-7xl leading-[30px]"
       >
-        I'm a Full Stack Software Engineer & Master’s Student at Northeastern
-        University with 2+ years of industry experience building
+        I'm a Full Stack Software App & Web Developer Student at Mumbai
+        University with 2+ years of experience building
         enterprise-scale web applications, microservices, and cloud-native
         solutions. Proven success in reducing checkout abandonment by 15%,
         cutting debugging time by 50%, and delivering platforms with 99.9%
-        uptime. Skilled in C# .NET, React, Node.js, AWS, PostgreSQL, and Redis,
+        uptime. Skilled in React Native, React, Node.js, AWS, PostgreSQL, and Redis,
         with hands-on experience across the software development lifecycle
         (SDLC), agile practices, and scalable architecture. Published researcher
         with a strong record of ML-based system design, secure payment

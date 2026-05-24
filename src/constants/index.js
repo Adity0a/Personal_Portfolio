@@ -161,11 +161,11 @@ const experiences = [
     ],
   },
   {
-    title: "Software Developer Intern",
-    company_name: "GEP Worldwide",
+    title: "Android Developer Intern",
+    company_name: "AICTE",
     icon: gep,
     iconBg: "#E6DEDD",
-    date: "May 2022 - July 2022",
+    date: "October 2025 - December 2022",
     points: [
       "Developed different web interfaces, API and integrate them for various clients",
       "Collaborated with cross-functional teams including business team, product managers, and other developers",
@@ -173,11 +173,11 @@ const experiences = [
     ],
   },
   {
-    title: "Co-Owner",
-    company_name: "ENS Wardrobe",
+    title: "Full-Stack Developer",
+    company_name: "Codeveda",
     icon: ens,
     iconBg: "#E6DEDD",
-    date: "August 2022 - April 2022",
+    date: "July 2025 - August 2025",
     points: [
       "Started a bootstrap business which catered to client needs for customised clothing and perfumes.",
       "Learned a lot about social media marketing, SEO, team management, business operations, etc.",
@@ -186,10 +186,10 @@ const experiences = [
   },
   {
     title: "Web Developer - Intern",
-    company_name: "Ambrosial Inc.",
+    company_name: "Cognifyz Technologies",
     icon: ambrosial,
     iconBg: "#E6DEDD",
-    date: "December 2019 - January 2020",
+    date: "April 2025 - June 2025",
     points: [
       "Developed and maintained web applications according to client needs",
       "Gained hands-on experience under guidance of senior developers",
@@ -207,25 +207,25 @@ const schools = [
     date: "August 2024 - Present",
   },
   {
-    title: "Bachelor of Engineering - Information Technology",
-    company_name: "Vidyalankar Institute of Technology",
+    title: "Bachelor of Science - Information Technology",
+    company_name: "Nagindas Khandwala College",
     icon: vit,
     iconBg: "#FFFFFF",
-    date: "August 2018 - May 2022",
+    date: "June 2023 - May 2025",
   },
   {
     title: "Higher Secondary Certificate - Science",
-    company_name: "Pace Junior Science College",
+    company_name: "P.D.Turakhia Junior College of Science",
     icon: pace,
     iconBg: "#FFFFFF",
-    date: "July 2016 - March 2018",
+    date: "June 2020 - March 2022",
   },
   {
     title: "Secondary School Certificate",
-    company_name: "St. Paul High School",
+    company_name: "Raj High School",
     icon: sphs,
     iconBg: "#FFFFFF",
-    date: "June 2015 - May 2016",
+    date: "June 2015 - March 2020",
   },
 ];
 
@@ -290,9 +290,9 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Sentiment Aura - A Real-Time AI Voice Sentiment Visualization",
+    name: "SwiftShop: A Full-Stack Cross-Platform E-Commerce Solution",
     description:
-      "Sentiment Aura is a real-time voice sentiment visualizer that transforms spoken words into an immersive sci-fi aura. Using AI-powered speech-to-text, sentiment analysis, and generative graphics, it creates dynamic particle systems, hex grids, and color-shifting auras that react instantly to your emotions.",
+      "A comprehensive, production-ready e-commerce mobile application designed to provide a seamless shopping experience. The project features a robust Node.js/Express backend and a high-performance React Native frontend. It includes a complete shopping flow—from product discovery and category filtering to secure checkout and order management.Key features include:•User Authentication: Secure sign-in and profile management using Clerk.•Address Management: A custom system for users to add, update, and set default shipping addresses.•Product Catalog: Dynamic product fetching with sorting and category-based filtering.•Cart & Order System: Full CRUD functionality for shopping carts and a streamlined order placement process.•Admin Dashboard: Backend routes for managing products and monitoring orders.•Cloud Integration: Automated image handling and storage via Cloudinary.",
     tags: [
       {
         name: "React + p5.js",
@@ -309,7 +309,7 @@ const projects = [
     ],
     image: sentiment,
     source_code_link: "https://github.com/bagwe-shubham1727/sentiment-aura/",
-    demo_link: "https://sentiment-aura-iota.vercel.app/"
+    demo_link: "https://sentiment-aura-iota.vercel.app/",
   },
   {
     name: "Student Nexus - A Comprehensive Student Accommodation System",
@@ -331,7 +331,7 @@ const projects = [
     ],
     image: studentnexus,
     source_code_link: "https://github.com/bagwe-shubham1727/student-nexus",
-    demo_link: "https://student-nexus.vercel.app/"
+    demo_link: "https://student-nexus.vercel.app/",
   },
   {
     name: "StayMaster - Hotel Booking Management System",
@@ -353,7 +353,8 @@ const projects = [
     ],
     image: staymaster,
     source_code_link: "https://github.com/bagwe-shubham1727/StayMaster",
-    demo_link: "https://bustling-bellflower-465.notion.site/StayMaster-A-Smart-Hotel-Booking-Platform-1f0a1c2c8ee281008d62c81ef4406df9"
+    demo_link:
+      "https://bustling-bellflower-465.notion.site/StayMaster-A-Smart-Hotel-Booking-Platform-1f0a1c2c8ee281008d62c81ef4406df9",
   },
   {
     name: "Curve Bike Management System",
@@ -374,8 +375,10 @@ const projects = [
       },
     ],
     image: curvebike,
-    source_code_link: "https://github.com/bagwe-shubham1727/Curve-Bike-Management-System",
-    demo_link: "https://bustling-bellflower-465.notion.site/Curve-E-Bike-Management-System-1f0a1c2c8ee2817ca684c3f449f6abd1"
+    source_code_link:
+      "https://github.com/bagwe-shubham1727/Curve-Bike-Management-System",
+    demo_link:
+      "https://bustling-bellflower-465.notion.site/Curve-E-Bike-Management-System-1f0a1c2c8ee2817ca684c3f449f6abd1",
   },
   {
     name: "Health Bridge - One Stop Healthcare",
@@ -397,7 +400,8 @@ const projects = [
     ],
     image: health,
     source_code_link: "https://github.com/bagwe-shubham1727/HealthBridgeVIT",
-    demo_link: "https://bustling-bellflower-465.notion.site/Health-Bridge-All-In-One-HealthCare-System-1f0a1c2c8ee28170b200f3b1263efb66"
+    demo_link:
+      "https://bustling-bellflower-465.notion.site/Health-Bridge-All-In-One-HealthCare-System-1f0a1c2c8ee28170b200f3b1263efb66",
   },
   {
     name: "Portfolio Website",
@@ -418,9 +422,10 @@ const projects = [
       },
     ],
     image: portfolio,
-    source_code_link: "https://github.com/bagwe-shubham1727/Shubham-Bagwe-Portfolio",
-    demo_link: "https://shubham-bagwe-portfolio.vercel.app/"
-  }
+    source_code_link:
+      "https://github.com/bagwe-shubham1727/Shubham-Bagwe-Portfolio",
+    demo_link: "https://shubham-bagwe-portfolio.vercel.app/",
+  },
 ];
 
 export { services, technologies, experiences, schools, achievements, projects, testimonials };

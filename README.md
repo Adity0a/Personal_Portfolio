@@ -25,7 +25,7 @@ node -v
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/suhas1711/Shubham-Bagwe-Portfolio.git
+git clone https://github.com/suhas1711/Personal-Portfolio.git
 cd Shubham-Bagwe-Portfolio
 ```
 
