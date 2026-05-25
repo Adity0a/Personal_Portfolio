@@ -27,17 +27,17 @@ const Contact = () => {
 
     emailjs
       .send(
-        "service_s1jt53s",
-        "template_t5b9cgi",
+        "service_fv32s78",
+        "template_l2pojiy",
         {
           name: form.name,
-          to_name: "Shubham Bagwe",
+          to_name: "Aditya Mishra",
           email: form.email,
-          to_email: "shubhambagwe24@gmail.com",
+          to_email: "adityamishra1339@gmail.com",
           message: form.message,
           time: new Date().toLocaleString(),
         },
-        "-Gd3C7GEfWf6Hghxo"
+        "e1J4GF-7Ji5omH_rl",
       )
       .then(
         () => {
@@ -55,7 +55,7 @@ const Contact = () => {
 
           console.log(error);
           alert("Thank you. I will get back to you as soon as possible.");
-        }
+        },
       );
   };
 

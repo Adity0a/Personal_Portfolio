@@ -84,10 +84,10 @@ const Footer = () => {
 
         <div className="border-t border-gray-700 my-8" />
 
-        <div className="flex items-center justify-between text-sm text-secondary">
-          <p>
+        <div className="flex items-center justify-center text-sm text-secondary">
+          {/* <p>
             Based in <strong className="text-white">Boston, MA</strong>
-          </p>
+          </p> */}
 
           <p className="text-right">
             &copy; {new Date().getFullYear()} Aditya Mishra

@@ -148,19 +148,6 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Software Development Engineer (Full Stack)",
-    company_name: "Ingram Micro",
-    icon: ingram,
-    iconBg: "#1e76bd",
-    date: "July 2022 - August 2024",
-    points: [
-      "Developed and maintained web applications using React JS, .NET and other related technologies.",
-      "Collaborated with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implemented responsive design and ensuring cross-browser compatibility.",
-      "Participated in code reviews and providing constructive feedback to fellow developers.",
-    ],
-  },
-  {
     title: "Android Developer Intern",
     company_name: "AICTE",
     icon: gep,
@@ -200,22 +187,15 @@ const experiences = [
 
 const schools = [
   {
-    title: "Master Of Science - Computer Software Engineering",
-    company_name: "Northeastern University",
-    icon: neu,
-    iconBg: "#FFFFFF",
-    date: "August 2024 - Present",
-  },
-  {
     title: "Bachelor of Science - Information Technology",
     company_name: "Nagindas Khandwala College",
     icon: vit,
     iconBg: "#FFFFFF",
-    date: "June 2023 - May 2025",
+    date: "June 2023 - May 2026",
   },
   {
     title: "Higher Secondary Certificate - Science",
-    company_name: "P.D.Turakhia Junior College of Science",
+    company_name: "D.T.S.S Junior College of Science",
     icon: pace,
     iconBg: "#FFFFFF",
     date: "June 2020 - March 2022",
@@ -231,93 +211,67 @@ const schools = [
 
 const achievements = [
   {
-    title:
-      "We did a thorough research regarding the health and medical technology used in INDIA and published a research papaer, in which we provided a solution 'Health Bridge' ",
-    name: "International Journal of Research Publication",
-    designation: "Vol 3 Issue 4",
+    title: "Android App Development Virtual Internship ",
+    name: "All India Council for Technical Education (AICTE)",
+    description:
+      "Completed a comprehensive virtual internship program focused on Android app development, gaining practical experience in building mobile applications and enhancing programming skills.",
     company: "",
   },
   {
-    title:
-      "Dashing Debut Award for outstanding debutant performance in Ingram Micro worldwide",
-    name: "Ingram Micro SSC",
-    designation: "",
+    title: "Prompt Engineering for Generative AI",
+    name: "Amazon Web Services (AWS)",
+    description:
+      "Completed a specialized training program on prompt engineering for generative AI, acquiring skills to design effective prompts and optimize the performance of AI models in generating human-like text.",
     company: "",
   },
   {
-    title:
-      "Completion of CS50x from Havard University",
-    name: "Cambridge, Massachusetts",
-    designation: "",
+    title: "Artificial Intelligence for Beginners",
+    name: "HP LIFE (Learning Initiative for Entrepreneurs)",
+    description: "Completed an introductory course on artificial intelligence, gaining foundational knowledge of AI concepts, applications, and ethical considerations, and developing skills to apply AI techniques in various domains.",
     company: "",
   },
+  {
+    title: "Data Science and Machine Learning Bootcamp",
+    name: "Udemy",
+    description:
+      "Completed an intensive bootcamp on data science and machine learning, acquiring practical skills in data analysis, statistical modeling, and machine learning algorithms, and applying them to real-world datasets for predictive analytics and insights.",
+    company: "",
+  }
 ];
 
 const testimonials = [
-  {
-    testimonial:
-      "Shubham is a proactive, collaborative, and highly supportive student. His problem-solving ability, leadership, and empathy make him stand out. I’m confident he will be a valuable asset to any team or organization he joins.",
-    name: "Dr. Yu Jones",
-    designation: "Teaching Professor",
-    company: "Northeastern University",
-    image: yu,
-  },
-  {
-    testimonial:
-      "Shubham is a dedicated and high-performing engineer who consistently delivers excellent results. His initiative-driven mindset, quick learning ability, and strong problem-solving skills made him a key contributor to multiple high-impact projects. He is reliable, collaborative, and an asset to any team.",
-    name: "Dibyajit Chatterjee",
-    designation: "Director of Engineering",
-    company: "Ingram Micro",
-    image: dj,
-  },
-  {
-    testimonial:
-      "Shubham quickly translates business needs into effective technical solutions. His work improving procurement workflows, optimizing APIs, and enhancing system performance had a clear impact on efficiency and user experience. He is dependable, skilled, and delivers results.",
-    name: "Shirish Joshi",
-    designation: "Senior Engineering Manager",
-    company: "GEP Worldwide",
-    image: shirish,
-  },
-  {
-    testimonial:
-      "Shubham is a technically strong, detail-oriented, and quick-learning student. His project work in SQL and NoSQL, along with his leadership and problem-solving abilities, consistently stood out. He is disciplined, reliable, and well-prepared to excel in any future endeavor.",
-    name: "Rohit Barve",
-    designation: "Professor",
-    company: "Vidyalankar Institute of Technology",
-    image: rohit,
-  },
 ];
 
 const projects = [
   {
     name: "SwiftShop: A Full-Stack Cross-Platform E-Commerce Solution",
     description:
-      "A comprehensive, production-ready e-commerce mobile application designed to provide a seamless shopping experience. The project features a robust Node.js/Express backend and a high-performance React Native frontend. It includes a complete shopping flow—from product discovery and category filtering to secure checkout and order management.Key features include:•User Authentication: Secure sign-in and profile management using Clerk.•Address Management: A custom system for users to add, update, and set default shipping addresses.•Product Catalog: Dynamic product fetching with sorting and category-based filtering.•Cart & Order System: Full CRUD functionality for shopping carts and a streamlined order placement process.•Admin Dashboard: Backend routes for managing products and monitoring orders.•Cloud Integration: Automated image handling and storage via Cloudinary.",
+      "A comprehensive, production-ready e-commerce mobile application designed to provide a seamless shopping experience. The project features a robust Node.js/Express backend and a high-performance React Native frontend. It includes a complete shopping flow—from product discovery and category filtering to secure checkout and order management.",
     tags: [
       {
-        name: "React + p5.js",
+        name: "React Native",
         color: "blue-text-gradient",
       },
       {
-        name: "Deepgram Nova 2",
+        name: "MongoDB",
         color: "green-text-gradient",
       },
       {
-        name: "Google Gemini",
+        name: "Typescript",
         color: "pink-text-gradient",
       },
     ],
     image: sentiment,
-    source_code_link: "https://github.com/bagwe-shubham1727/sentiment-aura/",
-    demo_link: "https://sentiment-aura-iota.vercel.app/",
+    source_code_link: "https://github.com/Adity0a/E-Commerce.git",
+    demo_link: "",
   },
   {
-    name: "Student Nexus - A Comprehensive Student Accommodation System",
+    name: "Ryde: A Real-Time Full-Stack Ride-Hailing Application",
     description:
-      "A full-stack student housing and services platform that enables secure onboarding, personalized accommodation recommendations, and seamless global access with integrated payments and responsive multi-device support.",
+      "A high-performance, real-time ride-sharing mobile application modeled after Uber. The platform enables seamless interaction between riders and drivers by leveraging advanced geospatial technologies. It features live tracking, dynamic routing, and instant state synchronization to ensure a reliable and responsive user experience.",
     tags: [
       {
-        name: "React",
+        name: "React Native",
         color: "blue-text-gradient",
       },
       {
@@ -330,29 +284,29 @@ const projects = [
       },
     ],
     image: studentnexus,
-    source_code_link: "https://github.com/bagwe-shubham1727/student-nexus",
-    demo_link: "https://student-nexus.vercel.app/",
+    source_code_link: "https://github.com/Adity0a/Uber",
+    demo_link: "",
   },
   {
-    name: "StayMaster - Hotel Booking Management System",
+    name: "E-Study: A Comprehensive Mobile Learning Management System (LMS)",
     description:
-      "A Java-based hotel booking management system that ensures real-time room availability, optimized booking retrieval, and efficient admin operations with a layered architecture and PostgreSQL backend.",
+      "A full-featured educational platform designed to provide students with a seamless digital learning experience. E-Study enables users to discover academic content, engage with multimedia lessons, and monitor their educational journey through an intuitive mobile interface. The application bridges the gap between students and educators by offering a structured environment for course management and interactive learning.",
     tags: [
       {
-        name: "Java",
+        name: "Firestore",
         color: "blue-text-gradient",
       },
       {
-        name: "PostgreSQL",
+        name: "Java",
         color: "green-text-gradient",
       },
       {
-        name: "JavaFX",
+        name: "Redux",
         color: "pink-text-gradient",
       },
     ],
     image: staymaster,
-    source_code_link: "https://github.com/bagwe-shubham1727/StayMaster",
+    source_code_link: "https://github.com/Adity0a/E-Study.git",
     demo_link:
       "https://bustling-bellflower-465.notion.site/StayMaster-A-Smart-Hotel-Booking-Platform-1f0a1c2c8ee281008d62c81ef4406df9",
   },
@@ -377,8 +331,7 @@ const projects = [
     image: curvebike,
     source_code_link:
       "https://github.com/bagwe-shubham1727/Curve-Bike-Management-System",
-    demo_link:
-      "https://bustling-bellflower-465.notion.site/Curve-E-Bike-Management-System-1f0a1c2c8ee2817ca684c3f449f6abd1",
+    demo_link: "",
   },
   {
     name: "Health Bridge - One Stop Healthcare",
@@ -422,9 +375,8 @@ const projects = [
       },
     ],
     image: portfolio,
-    source_code_link:
-      "https://github.com/bagwe-shubham1727/Shubham-Bagwe-Portfolio",
-    demo_link: "https://shubham-bagwe-portfolio.vercel.app/",
+    source_code_link: "https://github.com/Adity0a/Personal_Portfolio.git",
+    demo_link: "",
   },
 ];
 
