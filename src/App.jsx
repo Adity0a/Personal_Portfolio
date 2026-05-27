@@ -13,6 +13,7 @@ import {
   Education,
   Testimonials,
   Footer,
+  ScrollToTop,
 } from "./components";
 
 const App = () => {
@@ -35,6 +36,7 @@ const App = () => {
           <Contact />
           <StarsCanvas />
           <Footer />
+          <ScrollToTop />
         </div>
       </div>
     </BrowserRouter>

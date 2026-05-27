@@ -11,6 +11,7 @@ import CanvasLoader from "./Loader";
 import Education from "./Education";
 import Testimonials from "./Testimonials";
 import Footer from "./Footer";
+import ScrollToTop from "./ScrollToTop";
 
 export {
   Hero,
@@ -29,4 +30,5 @@ export {
   ComputersCanvas,
   StarsCanvas,
   Footer,
+  ScrollToTop,
 };
