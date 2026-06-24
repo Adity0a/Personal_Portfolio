@@ -32,8 +32,18 @@ const Hero = () => {
       <div className="absolute inset-0 z-0 opacity-20 pointer-events-none">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
           <defs>
-            <pattern id="grid" width="50" height="50" patternUnits="userSpaceOnUse">
-              <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#915EFF" strokeWidth="0.5" />
+            <pattern
+              id="grid"
+              width="50"
+              height="50"
+              patternUnits="userSpaceOnUse"
+            >
+              <path
+                d="M 50 0 L 0 0 0 50"
+                fill="none"
+                stroke="#915EFF"
+                strokeWidth="0.5"
+              />
             </pattern>
           </defs>
           <rect width="100%" height="100%" fill="url(#grid)" />
@@ -46,7 +56,9 @@ const Hero = () => {
         <div className="absolute top-1/2 -right-24 w-80 h-80 rounded-full bg-[#1CD8D2] opacity-10 blur-[120px] animate-pulse delay-1000" />
       </div>
 
-      <div className={`relative z-10 h-full max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-8 pt-[120px]`}>
+      <div
+        className={`relative z-10 h-full max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-8 pt-[120px]`}
+      >
         {/* Vertical Progress/Indicator Line */}
         <div className="flex flex-col justify-center items-center mt-5">
           <motion.div
@@ -103,7 +115,8 @@ const Hero = () => {
               transition={{ duration: 1, delay: 0.8 }}
               className="mt-4 text-[#dfd9ff] font-medium lg:text-[22px] sm:text-[18px] xs:text-[14px] text-[12px] leading-relaxed max-w-lg"
             >
-              I build scalable architectures and pixel-perfect interfaces, <br className="hidden md:block" />
+              I build scalable architectures and pixel-perfect interfaces,{" "}
+              <br className="hidden md:block" />
               turning complex problems into elegant software solutions.
             </motion.p>
 
@@ -115,7 +128,10 @@ const Hero = () => {
               className="mt-12 flex flex-wrap items-center gap-6"
             >
               <motion.a
-                whileHover={{ scale: 1.05, boxShadow: "0 0 20px rgba(145,94,255,0.4)" }}
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: "0 0 20px rgba(145,94,255,0.4)",
+                }}
                 whileTap={{ scale: 0.95 }}
                 href="#projects"
                 className="px-10 py-4 rounded-2xl text-lg font-bold text-white bg-gradient-to-br from-[#915EFF] to-[#703fd1] transition-all"
@@ -123,9 +139,12 @@ const Hero = () => {
                 View Projects
               </motion.a>
               <motion.a
-                whileHover={{ scale: 1.05, backgroundColor: "rgba(145,94,255,0.1)" }}
+                whileHover={{
+                  scale: 1.05,
+                  backgroundColor: "rgba(145,94,255,0.1)",
+                }}
                 whileTap={{ scale: 0.95 }}
-                href="/Resume.pdf"
+                href="file:///C:/Users/ADITYA/Downloads/Mobile%20Devices/Aaditya_Resume.PDF"
                 download
                 className="px-10 py-4 rounded-2xl text-lg font-bold text-white border-2 border-[#915EFF] transition-all"
               >
@@ -152,7 +171,8 @@ const Hero = () => {
                   alt="profile"
                   className="w-full h-full object-cover object-top rounded-full transition-transform duration-500 hover:scale-110"
                   onError={(e) => {
-                    e.target.src = "https://via.placeholder.com/500?text=Aditya+Mishra";
+                    e.target.src =
+                      "https://via.placeholder.com/500?text=Aditya+Mishra";
                   }}
                 />
               </div>
@@ -163,7 +183,6 @@ const Hero = () => {
                 transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                 className="absolute -inset-4 border-2 border-dashed border-[#915EFF]/30 rounded-full"
               />
-
             </div>
           </motion.div>
         </div>
