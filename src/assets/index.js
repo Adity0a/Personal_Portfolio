@@ -26,10 +26,18 @@ import ens from "./company/ens.png";
 import ambrosial from "./company/ambrosial.png";
 import ingram from "./company/ingram.png";
 import gep from "./company/gep.png";
+import aicte from "./company/aicte.png";
+import gncipl from "./company/gncipl.png";
+import cognify from "./company/cognify.png";
+import codeveda from "./company/codeveda.png";
 
 import portfolio from "./portfolio.png";
 import health from "./health.png";
 import tripguide from "./tripguide.png";
+import fit from "./fit.png";
+import razorpay from "./razorpay.png";
+import ryde from "./ryde.png";
+import estudy from "./estudy.png";
 
 import githublogo from "./nav/github.png";
 import linkedin from "./nav/linkedin.png";
@@ -38,6 +46,10 @@ import neu from "./school/NEU.png";
 import vit from "./school/VIT.png";
 import pace from "./school/Pace.png";
 import sphs from "./school/sphs.png";
+import raj from "./school/raj.png";
+import mkes from "./school/mkes.png";
+import sanskar from "./school/sanskar.jpg";
+
 import curvebike from "./curvebike.png";
 import studentnexus from "./studentnexus.png";
 import staymaster from "./staymaster.png";
@@ -74,15 +86,26 @@ export {
   ambrosial,
   ingram,
   gep,
+  aicte,
+  gncipl,
+  cognify,
+  codeveda,
   portfolio,
   health,
   tripguide,
+  fit,
+  razorpay,
+  ryde,
+  estudy,
   githublogo,
   linkedin,
   neu,
   vit,
   pace,
   sphs,
+  raj,
+  mkes,
+  sanskar,
   curvebike,
   studentnexus,
   staymaster,

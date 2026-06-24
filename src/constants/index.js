@@ -21,6 +21,15 @@ import {
   githublogo,
   ingram,
   gep,
+  sanskar,
+  mkes,
+  raj,
+  gncipl,
+  aicte,
+  codeveda,
+  cognify,
+  ryde,
+  estudy,
   ambrosial,
   ens,
   portfolio,
@@ -33,12 +42,13 @@ import {
   staymaster,
   curvebike,
   sentiment,
+  razorpay,
+  fit,
   dj,
   yu,
   shirish,
   rohit
 } from "../assets";
-import { s } from "maath/dist/misc-7d870b3c.esm";
 
 export const navLinks = [
   {
@@ -148,9 +158,21 @@ const technologies = [
 
 const experiences = [
   {
+    title: "Full Stack Developer Intern",
+    company_name: "Global Next Consulting India Private Limited (GNCIPL)",
+    icon: gncipl,
+    iconBg: "#E6DEDD",
+    date: "June 2025 - Present",
+    points: [
+      "Developed different web interfaces, API and integrate them for various clients",
+      "Collaborated with cross-functional teams including business team, product managers, and other developers",
+      "Contributed in success of GEP SMART and GEP NEXXE",
+    ],
+  },
+  {
     title: "Android Developer Intern",
     company_name: "AICTE",
-    icon: gep,
+    icon: aicte,
     iconBg: "#E6DEDD",
     date: "October 2025 - December 2022",
     points: [
@@ -162,7 +184,7 @@ const experiences = [
   {
     title: "Full-Stack Developer",
     company_name: "Codeveda",
-    icon: ens,
+    icon: codeveda,
     iconBg: "#E6DEDD",
     date: "July 2025 - August 2025",
     points: [
@@ -174,7 +196,7 @@ const experiences = [
   {
     title: "Web Developer - Intern",
     company_name: "Cognifyz Technologies",
-    icon: ambrosial,
+    icon: cognify,
     iconBg: "#E6DEDD",
     date: "April 2025 - June 2025",
     points: [
@@ -189,21 +211,21 @@ const schools = [
   {
     title: "Bachelor of Science - Information Technology",
     company_name: "Nagindas Khandwala College",
-    icon: vit,
+    icon: mkes,
     iconBg: "#FFFFFF",
     date: "June 2023 - May 2026",
   },
   {
     title: "Higher Secondary Certificate - Science",
     company_name: "D.T.S.S Junior College of Science",
-    icon: pace,
+    icon: sanskar,
     iconBg: "#FFFFFF",
     date: "June 2020 - March 2022",
   },
   {
     title: "Secondary School Certificate",
     company_name: "Raj High School",
-    icon: sphs,
+    icon: raj,
     iconBg: "#FFFFFF",
     date: "June 2015 - March 2020",
   },
@@ -244,26 +266,26 @@ const testimonials = [
 
 const projects = [
   {
-    name: "SwiftShop: A Full-Stack Cross-Platform E-Commerce Solution",
+    name: "Razorpay: A Full-Stack Cross-Platform",
     description:
-      "A comprehensive, production-ready e-commerce mobile application designed to provide a seamless shopping experience. The project features a robust Node.js/Express backend and a high-performance React Native frontend. It includes a complete shopping flow—from product discovery and category filtering to secure checkout and order management.",
+      "This project is a high-fidelity front-end implementation of the Razorpay landing page, built using a modern web development stack including Tailwind CSS and Vite. It features a responsive and utility-first design, ensuring a seamless user experience across various devices and screen sizes. The UI is enhanced with Feather Icons, custom CSS animations, and the Mulish font to achieve a polished, professional aesthetic. By leveraging PostCSS for automated styling optimizations, the project provides a fast and efficient build process suitable for production-ready landing pages. It serves as a comprehensive showcase of modern front-end techniques, focusing on clean code, performance, and visual accuracy.",
     tags: [
       {
-        name: "React Native",
+        name: "HTML",
         color: "blue-text-gradient",
       },
       {
-        name: "MongoDB",
+        name: "CSS",
         color: "green-text-gradient",
       },
       {
-        name: "Typescript",
+        name: "Javascript",
         color: "pink-text-gradient",
       },
     ],
-    image: sentiment,
-    source_code_link: "https://github.com/Adity0a/E-Commerce.git",
-    demo_link: "",
+    image: razorpay,
+    source_code_link: "https://github.com/Adity0a/RazorPay.git",
+    demo_link: "https://razor-pay-teal.vercel.app/",
   },
   {
     name: "Ryde: A Real-Time Full-Stack Ride-Hailing Application",
@@ -283,7 +305,7 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: studentnexus,
+    image: ryde,
     source_code_link: "https://github.com/Adity0a/Uber",
     demo_link: "",
   },
@@ -305,12 +327,33 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: staymaster,
+    image: estudy,
     source_code_link: "https://github.com/Adity0a/E-Study.git",
-    demo_link:
-      "https://bustling-bellflower-465.notion.site/StayMaster-A-Smart-Hotel-Booking-Platform-1f0a1c2c8ee281008d62c81ef4406df9",
+    demo_link: "",
   },
- 
+  {
+    name: "Razorpay: A Full-Stack Cross-Platform",
+    description:
+      "This project is a high-fidelity front-end implementation of the Razorpay landing page, built using a modern web development stack including Tailwind CSS and Vite. It features a responsive and utility-first design, ensuring a seamless user experience across various devices and screen sizes. The UI is enhanced with Feather Icons, custom CSS animations, and the Mulish font to achieve a polished, professional aesthetic. By leveraging PostCSS for automated styling optimizations, the project provides a fast and efficient build process suitable for production-ready landing pages. It serves as a comprehensive showcase of modern front-end techniques, focusing on clean code, performance, and visual accuracy.",
+    tags: [
+      {
+        name: "Vite",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "TypeScript",
+        color: "green-text-gradient",
+      },
+      {
+        name: "React",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: fit,
+    source_code_link: "https://github.com/Adity0a/thrive-with-me-app.git",
+    demo_link: "https://thrive-with-me-app.vercel.app/",
+  },
 ];
+
 
 export { services, technologies, experiences, schools, achievements, projects, testimonials };
