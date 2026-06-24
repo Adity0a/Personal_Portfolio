@@ -81,7 +81,7 @@ const Navbar = () => {
             </li>
           ))}
           <a
-            href={`https://9r000pwht2vrehu6.public.blob.vercel-storage.com/Resume%20-%20Aditya%20Bagwe`}
+            href={`https://drive.google.com/file/d/1OMGpxKEkJlpXnUi1oCYDAa93SDAmf0cm/view?usp=sharing`}
             target="_blank"
           >
             <p className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
