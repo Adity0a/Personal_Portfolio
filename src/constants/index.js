@@ -310,74 +310,7 @@ const projects = [
     demo_link:
       "https://bustling-bellflower-465.notion.site/StayMaster-A-Smart-Hotel-Booking-Platform-1f0a1c2c8ee281008d62c81ef4406df9",
   },
-  {
-    name: "Curve Bike Management System",
-    description:
-      "A data-driven bike-sharing management system that models station demand and route traffic with time and climate factors to optimize bike inventory, rider incentives, and operational efficiency.",
-    tags: [
-      {
-        name: "Streamlit",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "OracleDB",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Data Modeling",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: curvebike,
-    source_code_link:
-      "https://github.com/bagwe-shubham1727/Curve-Bike-Management-System",
-    demo_link: "",
-  },
-  {
-    name: "Health Bridge - One Stop Healthcare",
-    description:
-      "Web application that enables users to avail medical services on go such as appointment booking, e-prescription, ambulance on demand, disease prediction",
-    tags: [
-      {
-        name: "React",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Python",
-        color: "green-text-gradient",
-      },
-      {
-        name: "MongoDB",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: health,
-    source_code_link: "https://github.com/bagwe-shubham1727/HealthBridgeVIT",
-    demo_link:
-      "https://bustling-bellflower-465.notion.site/Health-Bridge-All-In-One-HealthCare-System-1f0a1c2c8ee28170b200f3b1263efb66",
-  },
-  {
-    name: "Portfolio Website",
-    description:
-      "A portfolio website to showcase myself. One you're probably looking at right now.",
-    tags: [
-      {
-        name: "Three.js",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Framer Motion",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: portfolio,
-    source_code_link: "https://github.com/Adity0a/Personal_Portfolio.git",
-    demo_link: "",
-  },
+ 
 ];
 
 export { services, technologies, experiences, schools, achievements, projects, testimonials };

@@ -31,7 +31,6 @@ const App = () => {
           <Tech />
           <Education />
           <Works />
-          <Testimonials />
           <Feedbacks />
           <Contact />
           <StarsCanvas />
