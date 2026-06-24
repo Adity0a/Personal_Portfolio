@@ -144,7 +144,7 @@ const Hero = () => {
                   backgroundColor: "rgba(145,94,255,0.1)",
                 }}
                 whileTap={{ scale: 0.95 }}
-                href="file:///C:/Users/ADITYA/Downloads/Mobile%20Devices/Aaditya_Resume.PDF"
+                href="/public/Aaditya_Resume.PDF"
                 download
                 className="px-10 py-4 rounded-2xl text-lg font-bold text-white border-2 border-[#915EFF] transition-all"
               >
