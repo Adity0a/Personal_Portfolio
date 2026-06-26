@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import "./styles/Loading.css";
 import { useLoading } from "../context/LoadingContext";
+
 
 const marqueeItems = [
   "Full Stack Developer",
@@ -25,14 +25,14 @@ const Loading = ({ percent }: { percent: number }) => {
       // Brief pause at 100%, then auto-transition
       const t1 = setTimeout(() => {
         setLoaded(true);
-        t2 = setTimeout(() => setIsLoaded(true), 200);
-      }, 200);
+        t2 = setTimeout(() => setIsLoaded(true), 500);
+      }, 500);
       return () => {
         clearTimeout(t1);
         clearTimeout(t2);
       };
     }
-  }, [percent]);
+  }, [percent >= 100]);
 
   useEffect(() => {
     if (!isLoaded) return;
@@ -55,7 +55,7 @@ const Loading = ({ percent }: { percent: number }) => {
     <>
       <div className="loading-header">
         <a href="/#" className="loader-title" data-cursor="disable">
-          SB
+          AM
         </a>
         <div className={`loaderGame ${clicked && "loader-out"}`}>
           <div className="loaderGame-container">

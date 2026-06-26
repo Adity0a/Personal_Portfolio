@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { styles } from "../styles";
 import profile from "../assets/Aditya.jpeg";
 
-const roles = ["Software Developer", "Web Developer", "Content Creator"];
+const roles = ["Software Developer", "Web Developer", "Full-Stack Developer"];
 
 const Hero = () => {
   const [index, setIndex] = useState(0);

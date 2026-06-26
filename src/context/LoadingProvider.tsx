@@ -19,29 +19,35 @@ export const LoadingProvider = ({ children }: PropsWithChildren) => {
   const [loading, setLoading] = useState(0);
   const { progress } = useProgress();
 
-  // On desktop, track Three.js loading progress.
+  // Track loading progress.
+  // We combine Three.js progress with a minimum incrementing baseline to prevent 0% stalls.
   useEffect(() => {
-    if (isDesktop) {
-      setLoading(Math.round(progress));
-    }
+    setLoading((prev) => {
+      const currentProgress = Math.round(progress);
+      return Math.max(prev, currentProgress);
+    });
   }, [progress]);
 
-  // On mobile, no 3D model loads so setProgress is never called.
-  // Auto-complete loading after a brief delay for fonts/CSS.
+  // Fallback / Auto-increment:
+  // If progress is slow or stuck, we gradually increment it to 100%
+  // to ensure the user isn't stuck forever.
   useEffect(() => {
-    if (!isDesktop) {
-      let percent = 0;
-      const interval = setInterval(() => {
-        percent += Math.round(Math.random() * 8 + 3);
-        if (percent >= 100) {
-          percent = 100;
+    if (loading >= 100) return;
+
+    const interval = setInterval(() => {
+      setLoading((prev) => {
+        if (prev >= 99) {
           clearInterval(interval);
+          return 100;
         }
-        setLoading(percent);
-      }, 60);
-      return () => clearInterval(interval);
-    }
-  }, []);
+        // Small random increment
+        const increment = Math.floor(Math.random() * 5) + 1;
+        return Math.min(prev + increment, 99);
+      });
+    }, 150);
+
+    return () => clearInterval(interval);
+  }, [loading >= 100]); // Restart if not complete
 
   const value = {
     isLoading,
@@ -52,7 +58,10 @@ export const LoadingProvider = ({ children }: PropsWithChildren) => {
   return (
     <LoadingContext.Provider value={value as LoadingType}>
       {isLoading && <Loading percent={loading} />}
-      <main className="main-body" aria-busy={isLoading}>
+      <main
+        className={`main-body ${isLoading ? "hidden" : ""}`}
+        aria-busy={isLoading}
+      >
         {children}
       </main>
     </LoadingContext.Provider>

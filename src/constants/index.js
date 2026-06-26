@@ -284,6 +284,7 @@ const projects = [
       },
     ],
     image: razorpay,
+    video: "https://vjs.zencdn.net/v/oceans.mp4", // Example placeholder video
     source_code_link: "https://github.com/Adity0a/RazorPay.git",
     demo_link: "https://razor-pay-teal.vercel.app/",
   },
