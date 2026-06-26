@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import { useLoading } from "../context/LoadingContext";
+import "./styles/Loading.css";
 
 
 const marqueeItems = [

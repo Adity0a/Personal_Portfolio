@@ -162,7 +162,7 @@ const experiences = [
     company_name: "Global Next Consulting India Private Limited (GNCIPL)",
     icon: gncipl,
     iconBg: "#E6DEDD",
-    date: "June 2025 - Present",
+    date: "Feb 2026 - Present",
     points: [
       "Developed different web interfaces, API and integrate them for various clients",
       "Collaborated with cross-functional teams including business team, product managers, and other developers",
@@ -174,7 +174,7 @@ const experiences = [
     company_name: "AICTE",
     icon: aicte,
     iconBg: "#E6DEDD",
-    date: "October 2025 - December 2022",
+    date: "October 2025 - December 2025",
     points: [
       "Developed different web interfaces, API and integrate them for various clients",
       "Collaborated with cross-functional teams including business team, product managers, and other developers",
@@ -284,7 +284,7 @@ const projects = [
       },
     ],
     image: razorpay,
-    video: "https://vjs.zencdn.net/v/oceans.mp4", // Example placeholder video
+    video: "https://drive.google.com/file/d/19w2L7P7AgZ2xQyw6weuQBHsVwGCXVWJH/view?usp=sharing", // Example placeholder video
     source_code_link: "https://github.com/Adity0a/RazorPay.git",
     demo_link: "https://razor-pay-teal.vercel.app/",
   },
