@@ -187,25 +187,7 @@ const Hero = () => {
                 Resume
               </motion.a>
             </motion.div>
-
-            {/* Stats Display */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.8, delay: 1.6 }}
-              className="mt-12 flex flex-wrap justify-center lg:justify-start gap-6 sm:gap-10 w-full"
-            >
-              {stats.map((stat) => (
-                <div key={stat.label} className="flex flex-col items-center lg:items-start">
-                  <h4 className="text-white text-[24px] sm:text-[32px] font-bold">
-                    {stat.count}
-                  </h4>
-                  <p className="text-secondary text-[12px] sm:text-[14px] uppercase tracking-wider">
-                    {stat.label}
-                  </p>
-                </div>
-              ))}
-            </motion.div>
+            
           </div>
 
           <motion.div
