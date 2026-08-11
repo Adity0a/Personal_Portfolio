@@ -81,7 +81,7 @@ const Navbar = () => {
             </li>
           ))}
           <a
-            href={`https://drive.google.com/file/d/1OMGpxKEkJlpXnUi1oCYDAa93SDAmf0cm/view?usp=sharing`}
+            href={`https://drive.google.com/file/d/1fFLqU2TvdSkdoEMTc0IZbmj6_xkVyFPz/view?usp=sharing`}
             target="_blank"
           >
             <p className="text-secondary hover:text-white text-[18px] font-medium cursor-pointer">
