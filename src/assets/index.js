@@ -38,9 +38,16 @@ import fit from "./fit.png";
 import razorpay from "./razorpay.png";
 import ryde from "./ryde.png";
 import estudy from "./estudy.png";
+import doctor from "./doctor.png";
+import edemy from "./edemy.png";
+import event from "./event.png";
+import blog from "./blog.png";
+import travel from "./travel.png";
 
 import githublogo from "./nav/github.png";
 import linkedin from "./nav/linkedin.png";
+import whatsapp from "./whatsapp-logo.svg";
+import email from "./email.svg";
 
 import neu from "./school/NEU.png";
 import vit from "./school/VIT.png";
@@ -97,8 +104,15 @@ export {
   razorpay,
   ryde,
   estudy,
+  doctor,
+  edemy,
+  event,
+  blog,
+  travel,
   githublogo,
   linkedin,
+  whatsapp,
+  email,
   neu,
   vit,
   pace,

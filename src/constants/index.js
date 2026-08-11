@@ -19,6 +19,8 @@ import {
   threejs,
   linkedin,
   githublogo,
+  whatsapp,
+  email,
   ingram,
   gep,
   sanskar,
@@ -30,6 +32,7 @@ import {
   cognify,
   ryde,
   estudy,
+  blog,
   ambrosial,
   ens,
   portfolio,
@@ -44,10 +47,14 @@ import {
   sentiment,
   razorpay,
   fit,
+  doctor,
+  edemy,
+  event,
+  travel,
   dj,
   yu,
   shirish,
-  rohit
+  rohit,
 } from "../assets";
 
 export const navLinks = [
@@ -66,7 +73,7 @@ export const navLinks = [
   {
     id: "contact",
     title: "Contact",
-  }
+  },
 ];
 
 export const socialLinks = [
@@ -79,6 +86,31 @@ export const socialLinks = [
     label: "Github",
     url: "https://github.com/Adity0a",
     icon: githublogo,
+  },
+  {
+    label: "WhatsApp",
+    url: "https://wa.me/8081916547",
+    icon: whatsapp,
+  },
+  {
+    label: "Email",
+    url: "mailto:adityamishra1339@gmail.com",
+    icon: email,
+  },
+];
+
+export const stats = [
+  {
+    count: "1+",
+    label: "Experiences",
+  },
+  {
+    count: "20+",
+    label: "Projects done",
+  },
+  {
+    count: "0+",
+    label: "Happy Clients",
   },
 ];
 
@@ -162,7 +194,7 @@ const experiences = [
     company_name: "Global Next Consulting India Private Limited (GNCIPL)",
     icon: gncipl,
     iconBg: "#E6DEDD",
-    date: "Feb 2026 - Present",
+    date: "June 2026 - August 2026",
     points: [
       "Developed different web interfaces, API and integrate them for various clients",
       "Collaborated with cross-functional teams including business team, product managers, and other developers",
@@ -249,7 +281,8 @@ const achievements = [
   {
     title: "Artificial Intelligence for Beginners",
     name: "HP LIFE (Learning Initiative for Entrepreneurs)",
-    description: "Completed an introductory course on artificial intelligence, gaining foundational knowledge of AI concepts, applications, and ethical considerations, and developing skills to apply AI techniques in various domains.",
+    description:
+      "Completed an introductory course on artificial intelligence, gaining foundational knowledge of AI concepts, applications, and ethical considerations, and developing skills to apply AI techniques in various domains.",
     company: "",
   },
   {
@@ -258,11 +291,10 @@ const achievements = [
     description:
       "Completed an intensive bootcamp on data science and machine learning, acquiring practical skills in data analysis, statistical modeling, and machine learning algorithms, and applying them to real-world datasets for predictive analytics and insights.",
     company: "",
-  }
+  },
 ];
 
-const testimonials = [
-];
+const testimonials = [];
 
 const projects = [
   {
@@ -284,30 +316,40 @@ const projects = [
       },
     ],
     image: razorpay,
-    video: "https://drive.google.com/file/d/19w2L7P7AgZ2xQyw6weuQBHsVwGCXVWJH/view?usp=sharing", // Example placeholder video
+    video:
+      "https://drive.google.com/file/d/1KHxjDdCgl6EOojm-JYznA-vDcxx69ums/view?usp=sharing", // Example placeholder video
     source_code_link: "https://github.com/Adity0a/RazorPay.git",
     demo_link: "https://razor-pay-teal.vercel.app/",
   },
   {
-    name: "Ryde: A Real-Time Full-Stack Ride-Hailing Application",
-    description:
-      "A high-performance, real-time ride-sharing mobile application modeled after Uber. The platform enables seamless interaction between riders and drivers by leveraging advanced geospatial technologies. It features live tracking, dynamic routing, and instant state synchronization to ensure a reliable and responsive user experience.",
+    name: "Uber Clone - Full-Stack Ride-Sharing Mobile Application",
+    description: `A high-performance mobile application built with React Native and Expo. It replicates the core Uber experience, featuring:
+•
+Secure Auth: Clerk (Email, Google OAuth).
+•
+Maps: Real-time tracking & routing via Google Maps API.
+•
+Payments: Secure Stripe integration.
+•
+Tech: NativeWind (Tailwind), Zustand, Neon (Serverless Postgres), Expo Router.`,
     tags: [
       {
-        name: "React Native",
+        name: "Google-map",
         color: "blue-text-gradient",
       },
       {
-        name: "MongoDB",
+        name: "React Native",
         color: "green-text-gradient",
       },
       {
-        name: "NodeJS",
+        name: "Tailwind css",
         color: "pink-text-gradient",
       },
     ],
     image: ryde,
-    source_code_link: "https://github.com/Adity0a/Uber",
+    video:
+      "https://drive.google.com/file/d/1TEFuZxV4QJ645LUVQE4uHuIYB_jto4Tn/view?usp=sharing",
+    source_code_link: "https://github.com/Adity0a/Uber.git",
     demo_link: "",
   },
   {
@@ -333,28 +375,142 @@ const projects = [
     demo_link: "",
   },
   {
-    name: "Razorpay: A Full-Stack Cross-Platform",
-    description:
-      "This project is a high-fidelity front-end implementation of the Razorpay landing page, built using a modern web development stack including Tailwind CSS and Vite. It features a responsive and utility-first design, ensuring a seamless user experience across various devices and screen sizes. The UI is enhanced with Feather Icons, custom CSS animations, and the Mulish font to achieve a polished, professional aesthetic. By leveraging PostCSS for automated styling optimizations, the project provides a fast and efficient build process suitable for production-ready landing pages. It serves as a comprehensive showcase of modern front-end techniques, focusing on clean code, performance, and visual accuracy.",
+    name: "Blog: A Full-Stack Cross-Platform",
+    description: `AI-Powered Full-Stack CMS (Blog Platform) Developed a robust Content Management System using the MERN stack, featuring AI-driven content generation and automated media optimization.
+•AI Integration: Leveraged Groq Cloud SDK (Llama 3) to implement an AI assistant capable of generating high-quality blog content from user prompts.
+•Media Pipeline: Built an automated image processing workflow using ImageKit API, implementing WebP conversion and quality-aware compression to reduce load times by ~40%.
+•Secure Authentication: Integrated Clerk Auth for seamless user sign-on and role-based access control for administrative tasks.
+•Engagement Engine: Engineered a moderated commenting system with an approval workflow to ensure community quality and prevent spam.`,
     tags: [
       {
         name: "Vite",
         color: "blue-text-gradient",
       },
       {
-        name: "TypeScript",
+        name: "MongoDb",
         color: "green-text-gradient",
       },
       {
-        name: "React",
+        name: "React js",
         color: "pink-text-gradient",
       },
     ],
-    image: fit,
-    source_code_link: "https://github.com/Adity0a/thrive-with-me-app.git",
-    demo_link: "https://thrive-with-me-app.vercel.app/",
+    image: blog,
+    video:
+      "https://drive.google.com/file/d/19w2L7P7AgZ2xQyw6weuQBHsVwGCXVWJH/view?usp=sharing",
+    source_code_link: "https://github.com/Adity0a/Blog.git",
+    demo_link: "https://quickblogfrontend-five.vercel.app/",
+  },
+  {
+    name: "QuickStay: Luxury Travel Booking",
+    description: `Modern Travel Booking Platform engineered for high-performance luxury hotel and room reservations with a focus on user experience and responsiveness.
+• User Management: Integrated Clerk Authentication for secure user sign-on and role-based access control (Travelers vs. Hotel Owners).
+• Dynamic Booking: Developed a real-time availability system for hotel rooms, including payment processing integration and booking confirmation flows.
+• Multi-Service Integration: Implemented service selectors for Flights, Trains, and Buses, providing a comprehensive travel hub experience.
+• Performance & UI: Built with React and Tailwind CSS, featuring dark mode support, smooth transitions, and optimized asset loading for a premium feel.`,
+    tags: [
+      {
+        name: "React js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind CSS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Clerk Auth",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: travel,
+    video:
+      "https://drive.google.com/file/d/1FAgalpuYuJhRuVJ0PseSzidCO_LAV2fN/view?usp=drive_link",
+    source_code_link: "https://github.com/Adity0a/Blog.git",
+    demo_link: "https://travelling-ruby.vercel.app/",
+  },
+  {
+    name: "LMS: Full-Stack Online Learning Platform",
+    description: `Full-Stack Learning Management System (LMS) developed using the MERN stack, designed to bridge the gap between educators and students through interactive course delivery and secure commerce.
+•Secure Authentication: Integrated Clerk Auth for seamless multi-factor authentication, providing dedicated profile management and role-based access for both Students and Educators.
+•Dynamic Content Delivery: Built a comprehensive course architecture allowing for multi-chapter organization, video lecture integration with duration tracking, and free preview capabilities.
+•Payment Gateway: Leveraged Stripe API to implement a robust checkout experience, enabling real-time course enrollments and automated transaction handling via a secure payment pipeline.
+•Educator Ecosystem: Designed a specialized dashboard for instructors to track total earnings, monitor student enrollment metrics, and manage course lifecycles from creation to publication.`,
+    tags: [
+      {
+        name: "React",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node.js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Stripe",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Clerk",
+        color: "purple-text-gradient",
+      },
+    ],
+    image: edemy,
+    video:
+      "https://drive.google.com/file/d/1iuigfvxVD_AblpUiZ73hnTucxcnNIqqR/view?usp=sharing",
+    source_code_link: "https://github.com/Adity0a/Edemy.git",
+    demo_link: "https://edemy-q1h8.vercel.app/",
+  },
+  {
+    name: "Evently: AI-Powered Event Scheduler",
+    description: `AI-Driven Full-Stack Event Management Platform Developed a feature-rich event scheduling and registration system using the MERN stack, focused on automated content generation and seamless attendee experiences.
+•AI Integration: Leveraged Groq Cloud SDK (Llama 3) to implement an intelligent assistant that generates professional, high-converting event descriptions from simple titles.
+•Interactive Geospatial Tools: Integrated Google Maps API to provide real-time venue tracking and visual markers for physical events, alongside dedicated support for virtual sessions.
+•Documentation Engine: Built a custom reporting feature using jsPDF, allowing users to export comprehensive event agendas and details as high-quality PDF documents.
+•Administrative Control: Engineered a robust admin dashboard with JWT authentication, providing real-time analytics on registrations, event performance, and automated content workflows.
+•Media Optimization: Integrated ImageKit API for smart image processing, ensuring event posters are delivered with quality-aware compression and WebP formatting for ~40% faster load times.`,
+    tags: [
+      {
+        name: "React 19",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "MongoDb",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Node js",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Tailwind CSS 4",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Groq AI",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Google Maps API",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: event,
+    video:
+      "https://drive.google.com/file/d/1a3frBQ7nVEsmOUbV0bOprDLKauP_NH0Z/view?usp=drive_link",
+    source_code_link: "https://github.com/Adity0a/EventManagement.git",
+    demo_link: "https://event-management-dpua.vercel.app/",
   },
 ];
 
-
-export { services, technologies, experiences, schools, achievements, projects, testimonials };
+export {
+  services,
+  technologies,
+  experiences,
+  schools,
+  achievements,
+  projects,
+  testimonials,
+};

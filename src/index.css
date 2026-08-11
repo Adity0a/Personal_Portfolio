@@ -33,6 +33,34 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+/* Vertical Timeline Improvements */
+.vertical-timeline::before {
+  background: linear-gradient(
+    to bottom,
+    rgba(145, 94, 255, 0) 0%,
+    rgba(145, 94, 255, 1) 50%,
+    rgba(145, 94, 255, 0) 100%
+  ) !important;
+  width: 3px !important;
+  box-shadow: 0 0 15px rgba(145, 94, 255, 0.5);
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #915EFF, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05) !important;
+  z-index: 10 !important;
+}
+
+@media only screen and (max-width: 1169px) {
+  .vertical-timeline--animate .vertical-timeline-element-icon.is-hidden {
+    visibility: visible !important;
+    animation: none !important;
+  }
+  /* Hide default timeline date on mobile to avoid duplication with custom footer */
+  .vertical-timeline-element-date {
+    display: none !important;
+  }
+}
+
 .violet-gradient {
   background: #804dee;
   background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
@@ -112,6 +140,11 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.backface-visibility-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 /* canvas- styles */

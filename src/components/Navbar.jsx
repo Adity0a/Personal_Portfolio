@@ -63,9 +63,9 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-white text-[18px] font-bold cursor-pointer flex ">
+          <p className="text-white text-[18px] font-bold cursor-pointer flex whitespace-nowrap">
             Aditya &nbsp;
-            <span className="sm:block hidden"> | Portfolio</span>
+            <span> | Portfolio</span>
           </p>
         </Link>
 
@@ -89,20 +89,6 @@ const Navbar = () => {
               Resume
             </p>
           </a>
-          {socialLinks.map((nav) => (
-            <li
-              key={nav.label}
-              className={`hover:background-color-white font-medium cursor-pointer`}
-            >
-              <a href={`${nav.url}`} target="_blank">
-                <img
-                  src={nav.icon}
-                  alt="SocialLogo"
-                  className="w-6 h-6 object-contain"
-                ></img>
-              </a>
-            </li>
-          ))}
         </ul>
 
         <div className="sm:hidden flex flex-1 justify-end items-center">

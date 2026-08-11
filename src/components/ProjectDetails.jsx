@@ -1,9 +1,60 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { github, link, close } from "../assets";
 
 const ProjectDetails = ({ project, onClose }) => {
+  useEffect(() => {
+    if (project) {
+      // Prevent scrolling on body
+      const originalStyle = window.getComputedStyle(document.body).overflow;
+      document.body.style.overflow = "hidden";
+
+      // Handle Escape key
+      const handleEsc = (event) => {
+        if (event.key === "Escape") {
+          onClose();
+        }
+      };
+      window.addEventListener("keydown", handleEsc);
+
+      return () => {
+        // Restore scrolling on body
+        document.body.style.overflow = originalStyle;
+        window.removeEventListener("keydown", handleEsc);
+      };
+    }
+  }, [project, onClose]);
+
   if (!project) return null;
+
+  // Helper function to handle Google Drive and other video links
+  const renderVideo = (url) => {
+    if (!url) return null;
+
+    if (url.includes("drive.google.com")) {
+      // Convert standard sharing link to embed link
+      const embedUrl = url.replace("/view?usp=sharing", "/preview").replace("/view", "/preview");
+      return (
+        <iframe
+          src={embedUrl}
+          className="w-full h-full border-none"
+          allow="autoplay; fullscreen"
+          title="Project Video"
+        />
+      );
+    }
+
+    return (
+      <video
+        src={url}
+        controls
+        autoPlay
+        loop
+        playsInline
+        className="w-full h-full object-contain bg-black"
+      />
+    );
+  };
 
   return (
     <AnimatePresence>
@@ -11,36 +62,29 @@ const ProjectDetails = ({ project, onClose }) => {
         className="fixed inset-0 z-[999] flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-sm overflow-hidden"
         onClick={onClose}
       >
+        {/* Close Button - Enhanced visibility with brand color */}
+        <button
+          onClick={onClose}
+          className="fixed top-5 right-5 z-[1050] p-2.5 bg-[#915EFF] hover:bg-[#703fd1] rounded-full transition-all border-2 border-white/40 shadow-[0_0_15px_rgba(145,94,255,0.5)] group"
+        >
+          <img
+            src={close}
+            alt="close"
+            className="w-5 h-5 lg:w-4 lg:h-4 object-contain group-hover:rotate-90 transition-transform duration-300"
+          />
+        </button>
+
         <motion.div
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.95 }}
-          className="relative bg-tertiary w-full max-w-4xl max-h-[85vh] rounded-2xl overflow-hidden shadow-2xl border border-white/10 flex flex-col lg:flex-row"
+          className="relative bg-tertiary w-full max-w-4xl max-h-[90vh] lg:max-h-[85vh] rounded-2xl overflow-y-auto lg:overflow-hidden shadow-2xl border border-white/10 flex flex-col lg:flex-row custom-scrollbar"
           onClick={(e) => e.stopPropagation()}
         >
-          {/* Close Button */}
-          <button
-            onClick={onClose}
-            className="absolute top-3 right-3 z-[1010] p-1.5 bg-black/60 hover:bg-black/90 rounded-full transition-all border border-white/20 shadow-lg group"
-          >
-            <img
-              src={close}
-              alt="close"
-              className="w-4 h-4 object-contain group-hover:rotate-90 transition-transform duration-300"
-            />
-          </button>
-
           {/* Project Media */}
-          <div className="lg:w-1/2 relative h-[200px] sm:h-[250px] lg:h-auto bg-black/20 overflow-hidden">
+          <div className="lg:w-1/2 relative min-h-[250px] sm:min-h-[350px] lg:h-auto bg-black/20 overflow-hidden flex-shrink-0">
             {project.video ? (
-              <video
-                src={project.video}
-                controls
-                autoPlay
-                loop
-                playsInline
-                className="w-full h-full object-contain bg-black"
-              />
+              renderVideo(project.video)
             ) : (
               <img
                 src={project.image}
@@ -96,6 +140,16 @@ const ProjectDetails = ({ project, onClose }) => {
                   >
                     <img src={github} alt="github" className="w-3.5 h-3.5 object-contain" />
                     Source Code
+                  </button>
+                </div>
+
+                {/* Secondary Close Button */}
+                <div className="mt-8 pt-6 border-t border-white/5 flex justify-end">
+                  <button
+                    onClick={onClose}
+                    className="text-secondary hover:text-white text-[14px] font-medium transition-colors flex items-center gap-2"
+                  >
+                    <span>Close Details</span>
                   </button>
                 </div>
               </motion.div>

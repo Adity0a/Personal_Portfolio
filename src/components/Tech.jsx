@@ -36,15 +36,15 @@ const Tech = () => {
         <p className={styles.sectionSubText}>What I use to bring ideas alive</p>
         <h2 className={styles.sectionHeadText}>Tech Stack.</h2>
       </motion.div>
-      <div className="flex flex-row flex-wrap justify-center gap-10">
+      <div className="flex flex-row flex-wrap justify-center gap-4 sm:gap-10">
         {technologies.map((technology) => (
-          <div className="w-28 h-28 flex justify-center items-center" key={technology.name}>
+          <div className="w-20 h-20 xs:w-24 xs:h-24 sm:w-28 sm:h-28 flex justify-center items-center" key={technology.name}>
             {isMobile ? (
-              <div className="w-full h-full flex justify-center items-center bg-tertiary rounded-full p-4 border-2 border-white/10 shadow-card hover:border-[#915EFF]/50 transition-all duration-300 backdrop-blur-sm">
+              <div className="w-full h-full flex justify-center items-center bg-tertiary rounded-full p-3 xs:p-4 border-2 border-white/10 shadow-card hover:border-[#915EFF]/50 transition-all duration-300 backdrop-blur-sm">
                 <img
                   src={technology.icon}
                   alt={technology.name}
-                  className="w-16 h-16 object-contain"
+                  className="w-10 h-10 xs:w-12 xs:h-12 object-contain"
                 />
               </div>
             ) : (
