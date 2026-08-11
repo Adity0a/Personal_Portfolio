@@ -181,13 +181,12 @@ const Hero = () => {
                   backgroundColor: "rgba(145,94,255,0.1)",
                 }}
                 whileTap={{ scale: 0.95 }}
-                href="https://drive.google.com/file/d/1OMGpxKEkJlpXnUi1oCYDAa93SDAmf0cm/view?usp=sharing"
+                href="https://drive.google.com/file/d/1fFLqU2TvdSkdoEMTc0IZbmj6_xkVyFPz/view?usp=sharing"
                 className="px-6 sm:px-8 py-3 rounded-xl text-[14px] sm:text-md font-bold text-white border-2 border-[#915EFF] transition-all text-center whitespace-nowrap"
               >
                 Resume
               </motion.a>
             </motion.div>
-            
           </div>
 
           <motion.div
@@ -224,7 +223,6 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-
     </section>
   );
 };
