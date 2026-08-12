@@ -35,12 +35,15 @@ const ProjectDetails = ({ project, onClose }) => {
       // Convert standard sharing link to embed link
       const embedUrl = url.replace("/view?usp=sharing", "/preview").replace("/view", "/preview");
       return (
-        <iframe
-          src={embedUrl}
-          className="w-full h-full border-none"
-          allow="autoplay; fullscreen"
-          title="Project Video"
-        />
+        <div className="w-full h-full bg-[#050816] flex items-center justify-center">
+          <iframe
+            src={embedUrl}
+            className="w-full h-full border-none"
+            allow="autoplay; fullscreen"
+            title="Project Video"
+            style={{ colorScheme: 'light' }}
+          />
+        </div>
       );
     }
 
@@ -59,7 +62,7 @@ const ProjectDetails = ({ project, onClose }) => {
   return (
     <AnimatePresence>
       <div
-        className="fixed inset-0 z-[999] flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-sm overflow-hidden"
+        className="fixed inset-0 z-[999] flex items-center justify-center p-4 sm:p-6 bg-[#000000]/90 overflow-hidden"
         onClick={onClose}
       >
         {/* Close Button - Enhanced visibility with brand color */}
@@ -78,11 +81,11 @@ const ProjectDetails = ({ project, onClose }) => {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           exit={{ opacity: 0, scale: 0.95 }}
-          className="relative bg-tertiary w-full max-w-4xl max-h-[90vh] lg:max-h-[85vh] rounded-2xl overflow-y-auto lg:overflow-hidden shadow-2xl border border-white/10 flex flex-col lg:flex-row custom-scrollbar"
+          className="relative bg-tertiary w-full max-w-4xl max-h-[90vh] lg:max-h-[85vh] rounded-2xl overflow-y-auto lg:overflow-hidden shadow-2xl border border-white/10 flex flex-col lg:flex-row custom-scrollbar z-[1000]"
           onClick={(e) => e.stopPropagation()}
         >
           {/* Project Media */}
-          <div className="lg:w-1/2 relative min-h-[250px] sm:min-h-[350px] lg:h-auto bg-black/20 overflow-hidden flex-shrink-0">
+          <div className="lg:w-1/2 relative w-full aspect-video lg:aspect-auto lg:min-h-[400px] bg-primary overflow-hidden flex-shrink-0 flex items-center justify-center">
             {project.video ? (
               renderVideo(project.video)
             ) : (
